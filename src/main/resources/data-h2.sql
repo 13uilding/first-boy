@@ -1,0 +1,3 @@
+INSERT INTO rofl(laugh) VALUES
+    ('HAHAHA'), ('GAHAHAHA'), ('JAJAJAJA'), ('XAXAXA'), ('LOLLER')
+;

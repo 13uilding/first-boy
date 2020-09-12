@@ -1,0 +1,23 @@
+server:
+    port: 8081
+
+spring:
+    application:
+        name: first-boy
+    datasource:
+        platform: h2
+        # Changed from jdbc:h2:mem:testdb to a file
+        # Change to mss sql later
+        url: jdbc:h2:mem:first-boy;Mode=PostgreSQL
+        # driver-class-name: org.h2.Driver
+        username: sa
+        password: password
+
+    jpa:
+        show-sql: true
+        database-platform: org.hibernate.dialect.H2Dialect
+        hibernate:
+            ddl-auto: none
+    h2:
+        console:
+            enabled: true
